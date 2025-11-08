@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIT's TechShop - E-Commerce Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>🛒 CIT's TechShop</h2>
+</header>
+
+<nav>
+  <a href="#" onclick="navigate('home')">Home</a>
+  <a href="#" onclick="navigate('products')">Products</a>
+  <a href="#" onclick="navigate('cart')">Cart</a>
+  <a href="#" onclick="navigate('wishlist')">Wishlist</a>
+  <a href="#" onclick="navigate('orders')">Orders</a>
+  <a href="#" onclick="navigate('contact')">Contact</a>
+  <a href="#" onclick="navigate('login')">Login</a>
+</nav>
+
+<!-- HOME PAGE -->
+<section id="home" class="active">
+  <h1>Welcome to CIT's TechShop</h1>
+  <p>Your one-stop tech shopping platform 🚀</p>
+</section>
+
+<!-- PRODUCTS PAGE -->
+<section id="products">
+  <h2>Products</h2>
+  <div id="productContainer"></div>
+</section>
+
+<!-- CART PAGE -->
+<section id="cart">
+  <h2>Your Cart</h2>
+  <ul id="cartList"></ul>
+</section>
+
+<!-- WISHLIST PAGE -->
+<section id="wishlist">
+  <h2>Your Wishlist</h2>
+  <ul id="wishlistList"></ul>
+</section>
+
+<!-- ORDERS PAGE -->
+<section id="orders">
+  <h2>Orders</h2>
+  <ul id="orderList"></ul>
+</section>
+
+<!-- LOGIN PAGE -->
+<section id="login">
+  <div class="form-container">
+    <h2>Login</h2>
+    <input id="loginEmail" type="email" placeholder="Email">
+    <input id="loginPassword" type="password" placeholder="Password">
+    <button onclick="loginUser()">Login</button>
+    <p>Don't have an account? <a onclick="navigate('register')">Register</a></p>
+    <p id="loginMsg"></p>
+  </div>
+</section>
+
+<!-- REGISTER PAGE -->
+<section id="register">
+  <div class="form-container">
+    <h2>Register</h2>
+    <input id="name" type="text" placeholder="Full Name">
+    <input id="email" type="email" placeholder="Email">
+    <input id="phone" type="number" placeholder="Phone">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="registerUser()">Register</button>
+    <p id="regMsg"></p>
+  </div>
+</section>
+
+<!-- CONTACT PAGE -->
+<section id="contact">
+  <h2>Customer Care</h2>
+  <p>Email: support@cittechshop.com</p>
+  <h3>Report an Issue:</h3>
+  <textarea placeholder="Write your issue..."></textarea><br>
+  <button>Submit</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
